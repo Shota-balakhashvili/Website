@@ -1,0 +1,686 @@
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-bottom: 4rem;
+  background-color: black;
+}
+header nav {
+  position: relative;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: flex;
+  background-color: black;
+}
+header nav .burger {
+  display: none;
+}
+@media only screen and (max-width: 990px) {
+  header nav .burger {
+    cursor: pointer;
+    z-index: 9999;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+header nav .burger div {
+  margin-top: 0.3rem;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: #8bd876;
+}
+header nav .logo {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 100%;
+  width: 15%;
+}
+@media only screen and (max-width: 990px) {
+  header nav .logo {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header nav .logo {
+    width: 30%;
+  }
+}
+header nav .logo a img {
+  width: 100%;
+  height: 100%;
+}
+header nav .navbar {
+  margin-left: auto;
+  margin-right: 0.7rem;
+}
+@media only screen and (max-width: 990px) {
+  header nav .navbar {
+    display: none;
+  }
+}
+header nav .navbar ul {
+  margin: 1.5rem 0;
+}
+header nav .navbar ul li a {
+  color: #8bd876;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 1.2rem 2.5rem;
+  transition: all 0.4s;
+  border-radius: 1rem;
+}
+header nav .navbar ul li a:hover {
+  background-color: rgb(9, 104, 115);
+}
+header nav .navbar ul li a.active {
+  background-color: rgb(49, 49, 67);
+  color: white;
+}
+header nav .navbar ul li a.active:hover {
+  background-color: rgb(9, 104, 115);
+}
+header section.index {
+  gap: 4rem;
+  background-color: black;
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media only screen and (max-width: 900px) {
+  header section.index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 852px) {
+  header section.index {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+header section.index .jap-car-blog {
+  margin-top: 1rem;
+  padding: 0.5rem 2rem 0;
+  text-align: center;
+  color: #8bd876;
+}
+header section.index .jap-car-blog h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+@media only screen and (max-width: 400px) {
+  header section.index .jap-car-blog h1 {
+    font-size: 2.5rem;
+  }
+}
+header section.index .jap-car-img {
+  border: 0.3rem solid #8bd876;
+  margin: auto;
+  height: 19.7rem;
+}
+@media only screen and (max-width: 1000px) {
+  header section.index .jap-car-img {
+    display: none;
+  }
+}
+header section.index .jap-car-img img {
+  margin: auto;
+  max-height: 100%;
+}
+header section.index .jap-car-types {
+  margin-top: 5rem;
+  color: #8bd876;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (max-width: 1000px) {
+  header section.index .jap-car-types {
+    padding: 0;
+    margin-top: 1rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  header section.index .jap-car-types {
+    margin-top: 1rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  header section.index .jap-car-types {
+    padding: 0;
+  }
+}
+header section.index .jap-car-types .jap-car-toyota {
+  border: 0.2rem solid transparent;
+  padding-left: 0.3rem;
+}
+header section.index .jap-car-types .jap-car-toyota:hover {
+  border: 0.2rem solid #8bd876;
+  border-radius: 1rem;
+}
+@media only screen and (max-width: 1000px) {
+  header section.index .jap-car-types .jap-car-toyota {
+    padding: 0 1rem;
+  }
+}
+header section.index .jap-car-types p {
+  font-size: 1rem;
+}
+@media only screen and (max-width: 1000px) {
+  header section.index .jap-car-types p {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  header section.index .jap-car-types p {
+    font-size: 0.9rem;
+  }
+}
+header section.index .jap-car-types h3 {
+  font-size: 1.3rem;
+}
+header section.toyota {
+  padding: 3rem 4rem 0 4rem;
+}
+header section.toyota .introduction-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (max-width: 1050px) {
+  header section.toyota .introduction-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+header section.toyota .introduction-grid .introduction-text h2 {
+  color: #8bd876;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 570px) {
+  header section.toyota .introduction-grid .introduction-text h2 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 440px) {
+  header section.toyota .introduction-grid .introduction-text h2 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header section.toyota .introduction-grid .introduction-text h2 {
+    font-size: 2rem;
+  }
+}
+header section.toyota .introduction-grid .introduction-text p {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+@media only screen and (max-width: 1050px) {
+  header section.toyota .introduction-grid .introduction-text {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+}
+header section.toyota .introduction-grid .introduction-text .learn-more {
+  margin-top: 2rem;
+}
+header section.toyota .introduction-grid .introduction-text .learn-more a {
+  background-color: #8bd876;
+  padding: 0.5rem 0.5rem;
+  color: black;
+  text-decoration: none;
+  border-radius: 5rem;
+}
+header section.toyota .introduction-grid .introduction-img {
+  width: 30rem;
+  margin-left: 4rem;
+  border: 1rem white solid;
+}
+@media only screen and (max-width: 1150px) {
+  header section.toyota .introduction-grid .introduction-img {
+    width: 25rem;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  header section.toyota .introduction-grid .introduction-img {
+    width: 22rem;
+    height: 100%;
+  }
+}
+header section.toyota .introduction-grid .introduction-img img {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 530px) {
+  header section.toyota .introduction-grid .introduction-img {
+    display: none;
+  }
+}
+
+main.index section.main-first-section-description {
+  padding: 3.5rem 0;
+  background-color: #8bd876;
+}
+main.index section.main-first-section-description .jap-cat-description {
+  width: 80%;
+  margin: auto;
+  font-size: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+@media only screen and (max-width: 900px) {
+  main.index section.main-first-section-description .jap-cat-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+main.index section.main-first-section-description .jap-cat-description .jap-car-nutshell {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+main.index section.main-first-section-description .jap-cat-description .jap-car-nutshell h2 {
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 450px) {
+  main.index section.main-first-section-description .jap-cat-description .jap-car-nutshell h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  main.index section.main-first-section-description .jap-cat-description .jap-car-nutshell p {
+    font-size: 1rem;
+  }
+}
+main.index section.main-first-section-description .jap-cat-description .jap-car-dec-nutshell {
+  text-align: center;
+}
+main.index section.main-first-section-description .jap-cat-description .jap-car-dec-nutshell h4 {
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 450px) {
+  main.index section.main-first-section-description .jap-cat-description .jap-car-dec-nutshell h4 {
+    font-size: 1.7rem;
+  }
+}
+main.index section.main-first-section-description .jap-cat-description .jap-car-dec-nutshell p {
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 450px) {
+  main.index section.main-first-section-description .jap-cat-description .jap-car-dec-nutshell p {
+    font-size: 1rem;
+  }
+}
+main.index section.main-first-section-description .jap-cat-description .jap-car-dec-nutshell .jap-car-dec-nutshell1 {
+  padding-bottom: 0.7rem;
+  border-bottom: 0.12rem solid black;
+}
+main.index section.main-first-section-description .jap-cat-description .jap-car-dec-nutshell .jap-car-dec-nutshell2 {
+  border-top: black solid 0.13rem;
+}
+main.index section.top-cars {
+  padding: 5rem 0;
+  color: #8bd876;
+  background-color: black;
+}
+main.index section.top-cars .top-cars-title {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+@media only screen and (max-width: 900px) {
+  main.index section.top-cars .top-cars-title {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 630px) {
+  main.index section.top-cars .top-cars-title {
+    width: 80%;
+  }
+}
+main.index section.top-cars .top-cars-title h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+}
+@media only screen and (max-width: 550px) {
+  main.index section.top-cars .top-cars-title h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  main.index section.top-cars .top-cars-title h2 {
+    font-size: 1.5rem;
+  }
+}
+main.index section.top-cars .top-cars-title p {
+  color: white;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 550px) {
+  main.index section.top-cars .top-cars-title p {
+    font-size: 0.7rem;
+  }
+}
+main.index section.top-cars .top-cars-grid {
+  gap: 7rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (max-width: 900px) {
+  main.index section.top-cars .top-cars-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+main.index section.top-cars .top-cars-grid .top-cars-grid-toyota img {
+  width: 100%;
+  height: 25rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(143, 143, 143, 0.628);
+}
+@media only screen and (max-width: 550px) {
+  main.index section.top-cars .top-cars-grid .top-cars-grid-toyota img {
+    height: 20rem;
+  }
+}
+@media only screen and (max-width: 430px) {
+  main.index section.top-cars .top-cars-grid .top-cars-grid-toyota img {
+    height: 15rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  main.index section.top-cars .top-cars-grid .top-cars-grid-toyota img {
+    height: 12rem;
+  }
+}
+main.index section.top-cars .top-cars-grid .top-cars-grid-toyota .top-cars-grid-toyota-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main.index section.top-cars .top-cars-grid .top-cars-grid-toyota .top-cars-grid-toyota-grid .top-cars-grid-toyota-grid-title {
+  margin-left: 3rem;
+}
+@media only screen and (max-width: 550px) {
+  main.index section.top-cars .top-cars-grid .top-cars-grid-toyota .top-cars-grid-toyota-grid .top-cars-grid-toyota-grid-title {
+    margin-left: 0;
+  }
+}
+main.index section.top-cars .top-cars-grid .top-cars-grid-toyota .top-cars-grid-toyota-grid .top-cars-grid-toyota-grid-models {
+  color: white;
+  margin-left: auto;
+  margin-right: 3rem;
+}
+main.index section.top-cars .top-cars-grid .top-cars-grid-toyota .top-cars-grid-toyota-grid .top-cars-grid-toyota-grid-models h5 {
+  margin: 0.5rem 0;
+}
+@media only screen and (max-width: 400px) {
+  main.index section.top-cars .top-cars-grid .top-cars-grid-toyota .top-cars-grid-toyota-grid .top-cars-grid-toyota-grid-models {
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+main.toyota {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  margin-top: 0;
+  background-color: #8bd876;
+}
+main.toyota .toyota-cont {
+  width: 80%;
+  margin: auto;
+}
+main.toyota .toyota-cont .toyota-title {
+  width: 30%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3rem;
+}
+@media only screen and (max-width: 700px) {
+  main.toyota .toyota-cont .toyota-title {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  main.toyota .toyota-cont .toyota-title {
+    width: 70%;
+  }
+}
+main.toyota .toyota-cont .toyota-title h2 {
+  text-transform: uppercase;
+  margin: 0;
+}
+main.toyota .toyota-cont .toyota-title h5 {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+main.toyota .toyota-cont .toyota-grid-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  color: #8bd876;
+}
+@media only screen and (max-width: 1300px) {
+  main.toyota .toyota-cont .toyota-grid-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main.toyota .toyota-cont .toyota-grid-content .toyota-supra {
+  background-color: black;
+  display: flex;
+  border-radius: 1rem;
+}
+main.toyota .toyota-cont .toyota-grid-content .toyota-supra .toyota-supra-img {
+  width: 60%;
+}
+@media only screen and (max-width: 600px) {
+  main.toyota .toyota-cont .toyota-grid-content .toyota-supra .toyota-supra-img {
+    display: none;
+  }
+}
+main.toyota .toyota-cont .toyota-grid-content .toyota-supra .toyota-supra-img img {
+  border-radius: 1rem 0 0 1rem;
+  width: 20rem;
+  height: 100%;
+}
+@media only screen and (max-width: 1300px) {
+  main.toyota .toyota-cont .toyota-grid-content .toyota-supra .toyota-supra-img img {
+    width: 30rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  main.toyota .toyota-cont .toyota-grid-content .toyota-supra .toyota-supra-img img {
+    width: 23rem;
+  }
+}
+@media only screen and (max-width: 790px) {
+  main.toyota .toyota-cont .toyota-grid-content .toyota-supra .toyota-supra-img img {
+    width: 19rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main.toyota .toyota-cont .toyota-grid-content .toyota-supra .toyota-supra-img img {
+    display: none;
+  }
+}
+main.toyota .toyota-cont .toyota-grid-content .toyota-supra .toyota-supra-text {
+  padding: 0 1rem;
+  text-align: center;
+}
+main.toyota .toyota-cont .toyota-grid-content .gr86 {
+  grid-column: span 2;
+}
+main.toyota .toyota-cont .toyota-grid-content .gr86 .toyota-gr86-img img {
+  border-radius: 1rem 0 0 1rem;
+  width: 30rem;
+  height: 100%;
+}
+@media only screen and (max-width: 1000px) {
+  main.toyota .toyota-cont .toyota-grid-content .gr86 .toyota-gr86-img img {
+    width: 23rem;
+  }
+}
+@media only screen and (max-width: 790px) {
+  main.toyota .toyota-cont .toyota-grid-content .gr86 .toyota-gr86-img img {
+    width: 19rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main.toyota .toyota-cont .toyota-grid-content .gr86 .toyota-gr86-img img {
+    display: none;
+  }
+}
+
+footer {
+  padding: 4rem 2rem;
+  background-color: #8bd876;
+}
+footer .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media only screen and (max-width: 800px) {
+  footer .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+}
+@media only screen and (max-width: 440px) {
+  footer .footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 440px) {
+  footer .footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+footer .footer-grid .footer-copyright h4 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
+@media only screen and (max-width: 800px) {
+  footer .footer-grid .footer-to-top {
+    text-align: center;
+  }
+}
+footer .footer-grid .footer-to-top a {
+  font-size: 1.5rem;
+  color: black;
+  transition: scale 1s;
+  text-decoration: none;
+  transition: all 1s;
+}
+footer .footer-grid .footer-to-top a:hover {
+  border: 2px solid black;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+footer .footer-grid .footer-made-by {
+  font-size: 1.5rem;
+  text-align: end;
+}
+@media only screen and (max-width: 800px) {
+  footer .footer-grid .footer-made-by {
+    text-align: center;
+  }
+}
+footer .footer-grid .footer-site-spec {
+  text-align: end;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 800px) {
+  footer .footer-grid .footer-site-spec {
+    text-align: center;
+  }
+}
+footer .footer-grid .footer-site-spec a {
+  color: black;
+}
+footer .footer-contact {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+@media only screen and (max-width: 1100px) {
+  footer .footer-contact {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  footer .footer-contact {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  footer .footer-contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+footer .footer-contact .footer-contact-btn button {
+  padding: 0.5rem 1rem;
+  background-color: #8bd876;
+  border-radius: 1rem;
+}
+footer .footer-contact .footer-contact-name {
+  margin-top: 0.5rem;
+}
+footer .footer-contact .footer-work {
+  font-size: 1.5rem;
+  color: black;
+}
+footer .footer-contact .footer-work h4 {
+  margin: 0;
+}
+
+footer.back-black {
+  background-color: black;
+  color: white;
+}
+footer.back-black .footer-site-spec a {
+  font-size: 1.5rem;
+  color: white;
+}
+footer.back-black .footer-to-top a {
+  color: white;
+}
+footer.back-black .footer-to-top a:hover {
+  border: 2px solid white;
+}
+footer.back-black .footer-work h4 {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
